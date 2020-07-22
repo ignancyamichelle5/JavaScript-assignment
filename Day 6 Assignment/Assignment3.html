@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Website</title>
+<style>
+#clock{
+	size:200px;
+}
+
+</style>
+</head>
+<body>
+<h1>MY NEW WEBPAGE</h1>
+<label for="Name">Enter your name:</label>
+<input type="text" name="name"></input>
+<br><br>
+<button onclick="welcome()">Submit</button>
+<script>
+  function welcome(){
+alert("Welcome To My Website!!!");
+}
+</script>
+<br><br>
+<script>
+function digclock()
+{
+	var d = new Date()
+	var t = d.toLocaleTimeString()
+	
+	document.getElementById("clock").innerHTML = t
+}
+
+setInterval(function(){digclock()},1000)
+</script>
+<script>
+const dmode = document.getElementById('dark');
+
+dmode.onclick = function changeColor(){
+    
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+    document.body.style.fontFamily = 'Helvetica';
+   
+}
+</script>
+<div id="clock">
+</body>
+</html>

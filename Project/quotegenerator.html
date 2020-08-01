@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quote Generator</title>
+    </head>
+    <body style="background-color: black; color:white;">
+        <br><br><br><br><br><br><br><br><br>
+        <center>
+        <h1>Quote Generator</h1>
+        <div id="quoteDisplay">
+            <!--display quotes here-->
+        </div>
+        <div id="images">
+            <!--images are displayed-->
+        </div>
+        <br>
+        <button onclick="newQuote()">New Quote</button>
+        <script>
+            var quotes=['You can do anything, but not everything.',
+'Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.',
+'The richest man is not he who has the most, but he who needs the least.',
+'You miss 100 percent of the shots you never take.',
+'Courage is not the absence of fear, but rather the judgement that something else is more important than fear.',
+'You must be the change you wish to see in the world.',
+'When hungry, eat your rice; when tired, close your eyes. Fools may laugh at me, but wise men will know what I mean.',
+'Life is 10 percent what happens to me and 90 percent of how I react to it.',
+'To the man who only has a hammer, everything he encounters begins to look like a nail.',
+'We are what we repeatedly do; excellence, then, is not an act but a habit.',
+'Strive not to be a success, but rather to be of value. ',
+'I am not a product of my circumstances. I am a product of my decisions.',
+'The most common way people give up their power is by thinking they don’t have any.',
+'The most difficult thing is the decision to act, the rest is merely tenacity.',
+'Don’t judge each day by the harvest you reap but by the seeds that you plant.',
+'The real opportunity for success lies within the person and not in the job.',
+'Change your thoughts and you change your world.',
+'Build your own dreams, or someone else will hire you to build theirs.',
+'Remember that not getting what you want is sometimes a wonderful stroke of luck.',
+'You can’t use up creativity. The more you use, the more you have.',
+'I have learned over the years that when one’s mind is made up, this diminishes fear.',
+'A truly rich man is one whose children run into his arms when his hands are empty.',
+'Certain things catch your eye, but pursue only those that capture the heart.',
+'The only person you are destined to become is the person you decide to be.',
+'Nothing will work unless you do.',
+'I alone cannot change the world, but I can cast a stone across the water to create many ripples.',
+'What we achieve inwardly will change outer reality.',
+'Believe you can and you’re halfway there.',
+'Too many of us are not living our dreams because we are living our fears.',
+'I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.'
+]
+
+
+function newQuote(){
+    var randomNumber=Math.floor(Math.random() * (quotes.length));
+    document.getElementById('quoteDisplay').innerHTML=quotes[randomNumber];
+}
+        </script>
+        </center>
+    </body>
+</html>
